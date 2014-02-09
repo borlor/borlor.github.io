@@ -487,7 +487,7 @@ background-color : #ccc; }
 		header {
 			clear: both;
 			width: 80%; /* 1000px / 1250px */
-			/*font-size: 0.8125em;*/ /* 13 / 16 */
+			font-size: 0.8125em; /* 13 / 16 */
 			max-width: 92.3em; /* 1200px / 13 */
 			margin: 0 auto;
 			padding: 35px 0px 10px 0px;
@@ -543,6 +543,7 @@ background-color : #ccc; }
 		width: 100%;	
 		border-top: 1px solid #000;
 		background: #222 url(../img/dark_wood.png) left top;
+        box-shadow: 1px 1px 50px #5E5E5E;
 	}
 	
 		footer {

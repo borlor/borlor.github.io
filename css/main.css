@@ -4,19 +4,8 @@
 /*
 /*****************************************************************************/
 
-body {
-    /*background-image: url('../img/wavegrid.png');*/
-}
-
-#socialnav {
-    position: absolute;
-    right: 1.5em;
-    top: 1.5em;
-}
-
 #imagecontainer {
-    background-image: url('../img/background.png');
-    background-size: 100%;
+    background: url('../img/background.png') repeat;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -24,22 +13,50 @@ body {
     top: 0em;
 }
 
-nav {
-    float: right;
-    margin-right: 5em;
+header {
+   height: 1.3em; 
 }
 
-nav ul, ul.entries {
-    list-style-type: none;
-    text-align: center;
+    nav {
+        float: right;
+        margin-right: 8em;
+    }
+
+    nav ul, ul.entries {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        float: left;
+        display:inline-block;
+        margin-left: 3em;
+    }
+
+    .headertext {
+        letter-spacing: .2em;
+        text-transform: uppercase;
+    }
+
+    #socialnav {
+        position: absolute;
+        right: 1.5em;
+        top: 1.5em;
+    }
+
+/* responsivegrid overrides */
+#maincontent {
+    position: fixed;
+    top: 10em;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-nav li {
-    float: left;
-    display:inline-block;
-    margin-left: 3em;
-    letter-spacing: .2em;
-    text-transform: uppercase;
+#footercontainer {
+    position: fixed;
+    bottom: 0;
+    box-shadow: 1px 1px 50px #5E5E5E;
 }
 
 /*****************************************************************************/
