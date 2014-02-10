@@ -5,7 +5,7 @@
 /*****************************************************************************/
 #imagecontainer {
     background: url('../img/background.png') repeat;
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     z-index: -900;
@@ -45,6 +45,14 @@ and (max-width : 750px) {
         #headermenuicon {
             visibility: visible;     
         }
+    
+    #maincontent {
+        width: 95%;
+    }
+    
+    #gmap {
+        visibility: none;
+    }
 }
 
 @media all
@@ -73,6 +81,14 @@ and (min-width : 751px) {
         #headermenuicon {
             visibility: hidden;
         }
+
+    #gmap {
+        visibility: visible;
+        height: 20em;
+        border: 5px solid #ddd;
+        background: white;
+        padding: 3px;
+    }
 }
 
 header {
@@ -101,20 +117,91 @@ header {
         text-transform: uppercase;
     }
 
+
+#profile {
+    background: url('../img/profile.jpg') no-repeat;
+    background-size: 300px;
+    margin: 0 auto 2em auto;
+}
+
+#profileshort {
+    text-align: center;
+    color: #5F9EA0;
+    font-size: 2em;
+}
+
+.content .title {
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.circular {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    box-shadow: 0 0 8px #D3D3D3;
+    -webkit-box-shadow: 0 0 8px #D3D3D3;
+    -moz-box-shadow: 0 0 8px #D3D3D3; 
+}
+
 /* responsivegrid overrides */
-#maincontent {
+#headcontainer {
     position: fixed;
+    z-index: 9;
+}
+
+#maincontent {
     top: 4.8em;
     bottom: 2.4em;
     left: 0;
     right: 0;
     color: #5F9EA0;
+    padding-top: 3em;
 }
 
 #footercontainer {
     position: fixed;
     bottom: 0;
     box-shadow: 1px 1px 50px #5E5E5E;
+}
+
+/* online stuff */
+hr.fancy-line { 
+    border: 0; 
+    height: 1px;
+    position: relative;
+    margin: 0.5em 0; /* Keep other elements away from pseudo elements*/
+}
+hr.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+hr.fancy-line:after {
+    content:'';
+    height: 0.5em;   /* half the height of :before */
+    top: 1px;        /* height of hr*/
+}
+
+hr.fancy-line:before, hr.fancy-line:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+
+hr.fancy-line, hr.fancy-line:before {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 75%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%,rgba(0,0,0,0.1)), color-stop(75%,rgba(0,0,0,0)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+    background: radial-gradient(ellipse at center, rgba(95,158,160,0.1) 0%,rgba(0,0,0,0) 75%);
+}
+
+hr.fancy-line:after {
+    /*background: #f4f4f4;*/
 }
 
 /*****************************************************************************/
