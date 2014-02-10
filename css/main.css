@@ -3,7 +3,6 @@
 /* Common
 /*
 /*****************************************************************************/
-
 #imagecontainer {
     background: url('../img/background.png') repeat;
     position: absolute;
@@ -13,42 +12,100 @@
     top: 0em;
 }
 
-header {
-   height: 1.3em; 
+@media all 
+and (min-width : 320px) 
+and (max-width : 750px) {
+    header {
+        width: 95%;
+    }
+
+        #headermenu {
+            background: url('../img/wavegrid.png');
+            z-index: 9;
+            right: 0;
+            top: 4.8em;
+            left: 0;
+            bottom: 0;
+            position: fixed;
+            box-shadow: inset 0 0 10px #000000;
+        }
+
+        nav {
+            font-size: 2.8em;
+        }
+
+        nav li {
+            margin-top: 1.5em;
+        }
+
+        #socialnav {
+            text-align: center;
+        }
+
+        #headermenuicon {
+            visibility: visible;     
+        }
 }
 
-    nav {
-        float: right;
-        margin-right: 8em;
+@media all
+and (min-width : 751px) {
+
+    header {}
+
+        nav {
+            float: right;
+            margin-right: 9em;
+            margin-top: -1.6em
+        }
+
+        nav li {
+            float: left;
+            margin-left: 3em;
+            display:inline-block;
+        }
+
+        #socialnav {
+            position: absolute;
+            right: 1.5em;
+            top: 1.5em;
+        }
+
+        #headermenuicon {
+            visibility: hidden;
+        }
+}
+
+header {
+    height: 1.3em; 
+}
+    
+    #headermenuicon {
+        position: absolute;
+        right: 0;
+        top: 2.8em;
     }
 
     nav ul, ul.entries {
         list-style-type: none;
         text-align: center;
     }
-
-    nav li {
-        float: left;
-        display:inline-block;
-        margin-left: 3em;
-    }
-
+    
     .headertext {
         letter-spacing: .2em;
         text-transform: uppercase;
     }
 
-    #socialnav {
-        position: absolute;
-        right: 1.5em;
-        top: 1.5em;
+    #titletext {
+        font-size: 1.2em;
+        letter-spacing: .25em;
+        text-transform: uppercase;
     }
 
 /* responsivegrid overrides */
 #maincontent {
     position: fixed;
-    top: 10em;
-    bottom: 0;
+    top: 4.8em;
+    bottom: 2.4em;
     left: 0;
     right: 0;
     color: #5F9EA0;

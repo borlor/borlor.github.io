@@ -60,21 +60,27 @@
       <div id="wrapper">
         <div id="headcontainer" class="row">
           <header>
-          <span><a class="headertext" href="/">{{ site.name }}</a></span>
+            <span><a id="titletext" href="/">{{ site.name }}</a></span>
 
-          <nav> 
-              <ul class="headertext" >
-                <li><a href="/about"><i class="fa fa-coffee"></i> About</a></li>
-                <li><a href="/contact"><i class="fa fa-inbox"></i> Contact</a></li>
-              </ul>
-          </nav>
-          <div id="socialnav">
-            <a href="http://www.linkedin.com/pub/simmy-leung/70/708/4b6"><img src="../img/linkedin.png"/></a>
-          </div>
+            <div id="headermenu">
+              <nav> 
+                  <ul class="headertext" >
+                    <li><a href="/about"><i class="fa fa-coffee"></i> About</a></li>
+                    <li><a href="/contact"><i class="fa fa-inbox"></i> Contact</a></li>
+                  </ul>
+              </nav>
+              <div id="socialnav">
+                <a href="http://www.linkedin.com/pub/simmy-leung/70/708/4b6"><img src="../img/linkedin.png"/></a>
+                <a href="/"><img src="../img/twitter.png"/></a>
+              </div>
+            </div>
+            <div id="headermenuicon" class="headertext">
+              <span class="closemenu"><a href="#"><i class="fa fa-times"> Menu</i></a></span>
+              <span class="openmenu"><a href="#"><i class="fa fa-bars"> Menu</i></a></span>
+            </div>
           </header>
         </div>
 
-        
         <div id="maincontentcontainer" class="row">
           {{ content }}
         </div>
@@ -99,5 +105,6 @@
 
       <!-- More Scripts-->
       <script src="{{ relative }}js/responsivegridsystem.js"></script>
+      <script src="{{ relative }}js/main.js"></script>
     </body>
 </html>
