@@ -90,6 +90,7 @@ and (min-width : 751px) {
         border: 5px solid #ddd;
         background: white;
         padding: 3px;
+        margin-top:1.5em;
     }
 }
 
@@ -136,6 +137,7 @@ header {
     letter-spacing: .2em;
     text-transform: uppercase;
     font-size: 1em;
+    margin-top: 1.5em;
 }
 
 .circular {
@@ -169,6 +171,98 @@ header {
 }
     #maincontent a {
         color: #5F9EA0; 
+    }
+    
+    .box {
+        -webkit-box-shadow: 1px 1px 50px #5E5E5E;
+        -moz-box-shadow: 1px 1px 50px #5E5E5E;
+        box-shadow: 1px 1px 50px #5E5E5E;
+
+        -webkit-border-radius: 0.2em;
+        -moz-border-radius: 0.2em;
+        border-radius: 0.2em;
+
+        margin-top: 1em;
+        padding: 1em;
+        background: rgba(1, 1, 1, 0.6);
+
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    .date {
+        border: none;
+        float: right;
+        padding-left:5px;
+        padding-right:5px;
+    }
+
+    .last {
+        margin-bottom: 0;
+    }
+
+ul.logoholder {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+    .logoholder li {
+        float: left;
+        padding: 0.2em;
+    }
+
+.logo {
+    height: 60px;
+    width: 120px;
+}
+
+    .r {
+        background: url('../img/Rlogo.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .maple {
+        background: url('../img/200px-Maplesoft_logo.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .python {
+        background: url('../img/Python_logo_and_wordmark.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .excel {
+        background: url('../img/Microsoft_Excel_2013_logo.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .powerpoint {
+        background: url('../img/Microsoft_PowerPoint_2013_logo.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .word {
+        background: url('../img/Microsoft_Word_2013_logo.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .windows {
+        background: url('../img/Windows_logo_and_wordmark_2012.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .apple {
+        background: url('../img/200px-Apple-logo.png') no-repeat; 
+        background-size: contain;
+        background-position: center;
     }
 
 #footercontainer {
