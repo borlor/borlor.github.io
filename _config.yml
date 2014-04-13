@@ -1,4 +1,5 @@
 name: Simmy Leung
 markdown: redcarpet
 pygments: true
+paginate: 5
 exclude: ["vendor"]

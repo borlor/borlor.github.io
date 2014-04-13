@@ -3,10 +3,13 @@ $( document ).ready(function() {
 
     $('#headermenuicon span.closemenu').hide();
 
-    console.log($('#gmap'));
+    //console.log($('#gmap'));
     if ($('#gmap').is(':visible')) {
-        console.log("Im in");
+        //console.log("Im in");
         new Maplace({
+            map_options: {
+                scrollwheel: false
+            },
             locations: [{
                 lat: 43.47,
                 lon: -80.54,
