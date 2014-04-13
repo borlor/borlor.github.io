@@ -166,28 +166,34 @@ header {
     bottom: 2.4em;
     left: 0;
     right: 0;
-    color: #5F9EA0;
     padding-top: 3em;
 }
     #maincontent a {
         color: #5F9EA0; 
     }
     
+    .tealtext {
+        color: #5F9EA0;
+    }
+    
     .box {
-        -webkit-box-shadow: 1px 1px 50px #5E5E5E;
-        -moz-box-shadow: 1px 1px 50px #5E5E5E;
-        box-shadow: 1px 1px 50px #5E5E5E;
-
         -webkit-border-radius: 0.2em;
         -moz-border-radius: 0.2em;
         border-radius: 0.2em;
 
         margin-top: 1em;
         padding: 1em;
-        background: rgba(1, 1, 1, 0.6);
+        background: rgba(255, 255, 255, 0.8);
 
         overflow: hidden;
         zoom: 1;
+    }
+
+    .about {
+        -webkit-box-shadow: 1px 1px 50px #5E5E5E;
+        -moz-box-shadow: 1px 1px 50px #5E5E5E;
+        box-shadow: 1px 1px 50px #5E5E5E;
+        background: rgba(1, 1, 1, 0.8);
     }
 
     .date {

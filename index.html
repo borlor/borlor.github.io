@@ -3,63 +3,17 @@ layout: default
 title: Simmy Leung
 ---
 <div id="maincontent">
-
-<p id="profileshort"><i class="fa fa-female"></i> - Acturial Science Graduate.</p>
-<hr class="fancy-line"></hr>
-
-<section class="content">
-  <p class="title"><i class="fa fa-book"></i> - Education</p>
-  <div class="box">
-  <p class="last">
-  <span>Honours Acturial Science.</br></span>
-  <span>University of Waterloo, Canada.</span>
-  </p>
-  <div id="gmap"></div>
-  </div>
-  </br>
-</section>
-
-<section class="content">
-  <p class="title"><i class="fa fa-certificate"></i> - Certificates</p>
-  <div class="box">
-  <div class="boxbackground"></div>
-  <p>
-  <span>Completed</br></span>
-  <span ><i class="fa fa-check-square-o"></i> Exam P<span class="date">Nov. 2012</span></br></span>
-  <span ><i class="fa fa-check-square-o"></i> Exam MLC<span class="date">Nov. 2013</span></br></span>
-  </p>
-  <p class="last">
-  <span>Planned Conquests</br></span>
-  <span><i class="fa fa-square-o"></i> Exam FM</span><span class="date">Feb. 2014</span>
-  </p>
-</div>
-  </br>
-</section>
-
-<section class="content">
-  <p class="title"> <i class="fa fa-file-text-o"></i> - Skill</p>
-  <div class="box">
-    <ul class="logoholder">
-      <li><div class="logo python"></div></li>
-      <li><div class="logo maple"></div></li>
-      <li><div class="logo r"></div></li>
-      <li><div class="logo excel"></div></li>
-      <li><div class="logo word"></div></li>
-      <li><div class="logo powerpoint"></div></li>
+  <ul class="posts">
+    {% for post in site.posts limit: 5 %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
   </ul>
-</div>
-</br>
-</section>
 
-<section class="content">
-  <p class="title"> <i class="fa fa-laptop"></i> - Laptop</p>
-  <div class="box">
-    <ul class="logoholder">
-      <li><div class="logo windows"></div></li>
-      <li><div class="logo apple"></div></li>
-    </ul>
+  {% for post in site.posts limit: 1 %}
+  <div class='post section box'>
+    <h1><a href='{{post.url}}'>{{post.title}}</a></h1>
+    <div class='body'>{{ post.content }}</div>
+    <a href='{{post.url}}#disqus_thread'>Comments</a>
   </div>
-</section>
-
+  {% endfor %}
 </div>
-
